@@ -1,0 +1,116 @@
+
+html, body {
+	height: 100%;
+}
+
+#mainContainer {
+	background: url("clockimages/big-analog-clock.png") no-repeat top left;
+	width: 800px;
+	height: 800px;
+	position: auto;
+	display: inline-block;
+	float:left;
+}
+
+#minuteHand {
+	position: absolute;
+	z-index: 1;
+	background-color: #EEB950;
+	border-radius: 15px;
+	width: 30px;
+	height: 260px;
+	top: 159px;
+	left: 399px;
+	transform: rotate(0deg);
+	transform-origin: 50% 95%;
+}
+
+#hourHand {
+	position: absolute;
+	z-index: 2;
+	background-color: #7789E5;
+	border-radius: 15px;
+	width: 30px;
+	height: 210px;
+	top: 209px;
+	left: 399px;
+	transform: rotate(0deg);
+	transform-origin: 50% 93.7%;
+}
+
+#centerThing {
+	position: absolute;
+	background-color:white;
+	z-index: 3;
+	border: 4px solid black;
+	border-radius: 100%;
+	width: 31px;
+	height: 31px;
+	left:395px;
+	top: 384px;
+}
+
+
+#drag-me::before {
+  content: "#" attr(id);
+  font-weight: bold;
+}
+
+.dot {
+	position: absolute;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	top: 20px;
+	left: 415px;
+	margin: -15px;
+}
+
+#minuteDot {
+	background-color: #EEB950;
+	z-index: 1;
+}
+
+#hourDot {
+	background-color: #7789E5;
+	z-index: 2;
+}
+
+.sideContainer {
+	position: auto;
+	display: inline-block;
+	float: left;
+}
+
+#yaymessage {
+	visibility: hidden;
+	position: fixed;
+	font-size: 800%;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background: url("clockimages/confetti.jpg") no-repeat bottom left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

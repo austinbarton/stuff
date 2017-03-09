@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clock</title>
+	<link href="clock.css" rel="stylesheet">
+	<script src="clock.js"></script>
+</head>
+<body ondragover="allowDrop(event)" onload="javascript:generateRandomTime();">
+
+<div id="yaymessage">YAY</div>
+
+<div id="mainContainer" ondragover="allowDrop(event)" ondrop="getCurrentHourMinPos()">
+	<div id="hourHand"></div>
+	<div id="minuteHand"></div>
+	<div id="centerThing"></div>
+	<div id="minuteDot" class="dot" draggable="true" onmouseover="bigMinuteDot(this)" onmouseout="normalDot(this)"  ></div>
+	<div id="hourDot" class="dot" draggable="true" onmouseover="bigHourDot(this)" onmouseout="normalDot(this)" ></div>
+</div>
+
+
+<div class="sideContainer">
+	<div>
+		<h3>Change time! Type your new time in the box</h3>
+		<form action="javascript:setTime();">
+			<input type="text" id="textInput" value="0:00"></input>
+			<input type="button" name="set" value="set" onclick="setTime()"></input>
+			<input type="button" name="addMinute" value="add one minute" onclick="addOneMinute()"></input>
+		</form>
+	</div>
+
+	<div>
+		<h3 id="randomTimeHeader"></h3>
+		<form action="generateRandomTime();">
+			<input type="button" id="newRandomTime" value="get new time" onclick="generateRandomTime()"></input>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
